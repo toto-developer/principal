@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Toto - Dev</title>
+
+    
+
+		<!-- CSS Plugins -->
+    <link rel="icon" href="https://images.vexels.com/media/users/3/130493/isolated/preview/d6d7e1562c266a4272d5733522705e94-icono-de-consola-de-juegos-by-vexels.png">
+        <link rel="stylesheet" href="css/plugins/bootstrap.min.css">
+        <link rel="stylesheet" href="css/plugins/font-awesome.css">
+		<link rel="stylesheet" href="css/plugins/magnific-popup.css">
+		<link rel="stylesheet" href="css/plugins/simplebar.css">
+		<link rel="stylesheet" href="css/plugins/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/plugins/owl.theme.default.min.css">
+		<link rel="stylesheet" href="css/plugins/jquery.animatedheadline.css">
+		
+		<!-- CSS Base -->
+        <link rel="stylesheet" class="back-color" href="css/style-dark.css">
+		<link rel="stylesheet" href="css/style-demo.css">
+		
+		<!-- Settings Style -->
+		<link rel="stylesheet" class="posit-nav" href="css/settings/left-nav.css" />
+		<link rel="stylesheet" class="theme-color" href="css/settings/sea-color.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.2.2/firebase.js"></script>
+<script src="js/spotify.js"></script>
+    </head>
+    <body>
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.2.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+		
+
+		<!-- Preloader -->
+		<div id="preloader">
+  			<div class="loading-area">
+    			<div class="circle"></div>
+  			</div>
+  			<div class="left-side"></div>
+  			<div class="right-side"></div>
+		</div>
+		
+		<!-- Main Site -->
+		<div id="home">
+  		<div id="about">
+    	<div id="resume">
+     	<div id="portfolio">
+		<div id="contact">
+			
+			<div class="header-mobile">
+                <a class="header-toggle"><i class="fas fa-bars"></i></a>
+                <h2>Toto</h2>
+            </div>
+			
+			<!-- Left Block -->
+			<nav class="header-main" data-simplebar>
+		
+				<!-- Logo -->
+				<div class="logo">
+            		<img src="https://media.discordapp.net/attachments/796523952016326677/796898077536813126/logo.png?width=36&height=40" alt="">
+            	</div>
+				
+          		<ul>
+					<li data-tooltip="home" data-position="top">
+            			<a href="#home" class="icon-h fas fa-house-damage"></a>
+					</li>
+					<li data-tooltip="about" data-position="top">
+            			<a href="#about" class="icon-a fas fa-user-tie"></a>
+					</li>
+					<li data-tooltip="resume" data-position="top">
+            			<a href="#resume" class="icon-r fas fa-address-book"></a>
+					</li>
+					<li data-tooltip="portfolio" data-position="top">
+            			<a href="#portfolio" class="icon-p fas fa-briefcase"></a>
+					</li>
+					<!--
+						<li data-tooltip="contact" data-position="bottom">
+							<a href="#contact" class="icon-c fas fa-envelope"></a>
+						</li>
+					-->
+          		</ul>
+				
+				<!-- Sound wave -->
+    			<a class="music-bg">
+      				<div class="lines">
+        				<span></span>
+        				<span></span>
+        				<span></span>
+        				<span></span>
+						<span></span>
+						<span></span>
+      				</div>
+					<p> Sound </p>
+    			</a>
+			 </nav>
+			
+			<!-- Home Section -->
+          	<div class="pt-home" style="background-image: url('img/fondo.gif')">
+             	<section>
+					
+					<!-- Banner -->
+					<div class="banner">
+  						<h1>Misael (♤Toto♤)</h1>
+						<p class="cd-headline rotate-1">
+							<span>Yo soy</span>
+							<span class="cd-words-wrapper">
+								<b class="is-visible">Developer</b>
+								<b>Programador</b>
+								<b>Gamer</b>
+							</span>
+						</p>
+					</div>
+					
+					<!-- Spotify text-center -->
+					<div class="lang">
+						<div class="manrope text-white p-8 absolute font-bold bottom-0 lg:right-0 text-green-500 text-sm opacity-50 ">
+							<svg data-v-a009c722="" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="spotify" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="mr-1 svg-inline--fa fa-spotify fa-w-16"><path data-v-a009c722="" fill="currentColor" d="M248 8C111.1 8 0 119.1 0 256s111.1 248 248 248 248-111.1 248-248S384.9 8 248 8zm100.7 364.9c-4.2 0-6.8-1.3-10.7-3.6-62.4-37.6-135-39.2-206.7-24.5-3.9 1-9 2.6-11.9 2.6-9.7 0-15.8-7.7-15.8-15.8 0-10.3 6.1-15.2 13.6-16.8 81.9-18.1 165.6-16.5 237 26.2 6.1 3.9 9.7 7.4 9.7 16.5s-7.1 15.4-15.2 15.4zm26.9-65.6c-5.2 0-8.7-2.3-12.3-4.2-62.5-37-155.7-51.9-238.6-29.4-4.8 1.3-7.4 2.6-11.9 2.6-10.7 0-19.4-8.7-19.4-19.4s5.2-17.8 15.5-20.7c27.8-7.8 56.2-13.6 97.8-13.6 64.9 0 127.6 16.1 177 45.5 8.1 4.8 11.3 11 11.3 19.7-.1 10.8-8.5 19.5-19.4 19.5zm31-76.2c-5.2 0-8.4-1.3-12.9-3.9-71.2-42.5-198.5-52.7-280.9-29.7-3.6 1-8.1 2.6-12.9 2.6-13.2 0-23.3-10.3-23.3-23.6 0-13.6 8.4-21.3 17.4-23.9 35.2-10.3 74.6-15.2 117.5-15.2 73 0 149.5 15.2 205.4 47.8 7.8 4.5 12.9 10.7 12.9 22.6 0 13.6-11 23.3-23.2 23.3z" class=""></path></svg> 
+							Escuchando en <span id="Song" class="italic"></span> Spotify <br>
+							&#9;Por <span id="author"></span>							
+						</div>
+            		</div>
+		
+					<!-- Social -->
+					<div class="social">
+            			<ul>
+                			<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                			<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                			<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            			</ul>
+        			</div>
+			  	</section>  
+          	</div>
+			
+			<!-- About Section -->
+			<div class="page pt-about" data-simplebar>
+				<section class="container">
+					
+					<!-- Section Title -->
+					<div class="header-page mt-70 mob-mt">
+						<h2>Sobre Mi</h2>
+						<span></span>
+					</div>
+				
+					<!-- Personal Info Start -->
+					<div class="row mt-100">
+					
+						<!-- Information Block -->
+						<div class="col-lg-12 col-sm-12">
+    						<div class="info box">
+								<div class="row">
+									<div class="col-lg-3 col-sm-4">
+										<div class="photo">
+											<img alt="" src="https://images-ext-2.discordapp.net/external/KchQk-PTBr9LDEsroVuEeUQoOIdMev4O05X0Lil0S-s/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/505521074704875530/58eb2dc551ed2c2fc9e66aabca360acb.png?width=510&height=510">		
+										</div>	
+									</div>
+									<div class="col-lg-9 col-sm-8">
+										<h4>Misael (♤Toto♤)</h4>
+										<div class="loc">
+											<i class="fas fa-map-marked-alt"></i> México, MX
+										</div>
+										<p class="about">Hi my name is <strong class="loc" style=" font-size: 14px;">Misael</strong>, pero conocido como <strong class="loc" style=" font-size: 14px;">Toto</strong> o <strong class="loc" style=" font-size: 14px;">TotoNex,</strong> a través de Internet y soy un desarrollador "fullstack" de 17 años que dedica tiempo a codificar y crear sitios web. He estado codificando durante aproximadamente 3 años y todavía estoy en el camino para aprender más.
+										</p>
+										<p>Conozco los siguientes lenguajes: JavaScript, HTML, C#, Java y Python
+										</p>
+									</div>
+									
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+                                		<div class="info-icon">
+                                     		<i class="fas fa-award"></i>
+                                     		<div class="desc-icon">
+												<h6>3 Años de </h6>
+                                            	<p>Experiencia</p>
+                                       		</div>
+                                		</div>
+                                	</div>
+									
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+                                		<div class="info-icon">
+                                     		<i class="fas fa-certificate"></i>
+                                     		<div class="desc-icon">
+												<h6>15+ Proyectos</h6>
+                                            	<p>Completados</p>
+                                      		</div>
+                                		</div>
+                                	</div>
+									
+									<!-- Icon Info -->
+									<div class="col-lg-3 col-sm-4">
+                                		<div class="info-icon">
+                                     		<i class="fab fa-discord"></i>
+                                     		<div class="desc-icon">
+												<h6>Discord</h6>
+                                           		<p>♤ 𝐓ⓄⓉ𝐨 ♤#8660</p>
+                                        	</div>
+                                		</div>
+                                	</div>
+									<div class="col-lg-3 col-sm-12 pt-50">
+                                		<a href="#" class="btn-st">Descargar CV</a>
+                                	</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Interests Row Start -->
+					<div class="row mt-100">
+					
+						<!-- Header Block -->
+						<div class="col-md-12">
+							<div class="header-box mb-50">
+								<h3>Mis intereses</h3>
+							</div>
+						</div>
+					
+						<div class="col-lg-12 col-sm-12">
+							<div class="box">
+								<div class="row">
+									<!-- Interests Item -->
+									<div class="col-lg-3 col-sm-6">
+										<div class="inter-icon">
+                                     		<i class="fas fa-music"></i>
+                                    	 	<div class="desc-inter">
+												<h6>Musica</h6>
+                               	        	</div>
+										</div>
+									</div>
+								
+									<!-- Interests Item -->
+									<div class="col-lg-3 col-sm-6">
+										<div class="inter-icon">
+                                     		<i class="fas fa-route"></i>
+                                     		<div class="desc-inter">
+												<h6>Viajes</h6>
+                                       		</div>
+                                		</div>
+									</div>
+								
+									<!-- Interests Item -->
+									<div class="col-lg-3 col-sm-6">
+										<div class="inter-icon">
+                                 	    	<i class="far fa-image"></i>
+                                  		   	<div class="desc-inter">
+												<h6>Fotos</h6>
+                                  	     	</div>
+                                		</div>
+									</div>
+								
+									<!-- Interests Item -->
+									<div class="col-lg-3 col-sm-6">
+										<div class="inter-icon">
+                                    	 	<i class="fas fa-film"></i>
+                                     		<div class="desc-inter">
+												<h6>Peliculas</h6>
+                                   	    	</div>
+                                		</div>
+									</div>
+								
+									<!-- Interests Item -->
+									<div class="col-lg-3 col-sm-6">
+										<div class="inter-icon">
+                                    	 	<i class="fas fa-book"></i>
+                                     		<div class="desc-inter">
+												<h6>Leer</h6>
+                                    	   	</div>
+                                		</div>
+									</div>
+								
+									<!-- Interests Item -->
+									<div class="col-lg-3 col-sm-6">
+										<div class="inter-icon">
+        	                             	<i class="fas fa-gamepad"></i>
+            	                         	<div class="desc-inter">
+												<h6>Video Juegos</h6>
+                    	                   	</div>
+                        	        	</div>
+									</div>
+								
+									<!-- Interests Item -->
+									<div class="col-lg-3 col-sm-6">
+										<div class="inter-icon">
+        	                             	<i class="fas fa-tree"></i>
+            	                         	<div class="desc-inter">
+												<h6>Acampar</h6>
+                    	                   	</div>
+                        	        	</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<!-- Service Row Start -->
+					<div class="row mt-100">
+					
+						<!-- Header Block -->
+						<div class="col-md-12">
+							<div class="header-box mb-50">
+								<h3>Servicios</h3>
+							</div>
+						</div>
+					
+						<!-- Service Item -->
+						<div class="col-lg-6 col-sm-6">
+							<div class="service box mb-40">
+								<i class="fab fa-discord"></i>
+								<h4>Bots Discord</h4>
+								<p>Lorem Ipsum es simplemente texto de relleno del Lorem ha sido el texto de relleno estándar de la industria..</p>
+							</div>
+						</div>
+
+						<!-- Service Item -->
+						<div class="col-lg-6 col-sm-6">
+							<div class="service box mb-40">
+								<i class="fas fa-cogs"></i>
+								<h4>Creador Web</h4>
+								<p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+							</div>
+						</div>
+
+						<!-- Service Item -->
+						<div class="col-lg-6 col-sm-6">
+							<div class="service box mb-40">
+								<i class="fab fa-npm"></i>
+								<h4>Creador de Npm</h4>
+								<p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+							</div>
+						</div>
+
+						<!-- Service Item -->
+						<div class="col-lg-6 col-sm-6">
+							<div class="service box mb-40">
+								<i class="fas fa-medkit"></i>
+								<h4>Soporte</h4>
+								<p>Lorem Ipsum is simply dummy text of the Lorem has been the industry's standard dummy text ever.</p>
+							</div>
+						</div>
+					</div>
+					<div class="p-4"></div>
+			  	</section>
+         	</div>
+			 
+			<!-- Resume Section -->
+          	<div class="page pt-resume" data-simplebar>
+            	<section class="container">
+					
+					<!-- Section Title -->
+					<div class="header-page mt-70 mob-mt">
+						<h2>Resumen</h2>
+    					<span></span>
+					</div>
+					
+					<!-- Experience & Education Row Start -->
+					<div class="row mt-100">
+					
+						<!-- Experience Column Start -->
+						<div class="col-lg-6 col-sm-12">
+						
+							<!-- Header Block -->
+							<div class="header-box mb-50">
+								<h3>Organizaciones</h3>
+							</div>
+						
+							<div class="experience box">
+								
+								<!-- Experience Item -->
+								<div class="item">
+									<div class="main">
+										<h4>Soporte MexiBot</h4>
+										<p><i class="far fa-calendar-alt"></i>2020</p>
+									</div>
+									<p>
+										Este servidor esta basado al soporte de el bot MexiBot.
+									</p>
+								</div>
+
+								<!-- Experience Item -->
+								<div class="item">
+									<div class="main">
+										<h4>ECO Bot - Official Server</h4>
+										<p><i class="far fa-calendar-alt"></i>2019 - 2020</p>
+									</div>
+									<p>Servidor de soporte del bot ECO, divercion, juegos y mas!</p>
+								</div>
+							</div>
+						</div>
+							
+						<!-- Education Column Start -->
+						<div class="col-lg-6 col-sm-12">
+						
+							<!-- Header Block -->
+							<div class="header-box mb-50 mob-box-mt">
+								<h3>Bots</h3>
+							</div>
+						
+							<div class="experience box">
+
+								<!-- Education Item -->
+								<div class="item">
+									<div class="main">
+										<h4>MexiBot</h4>
+										<p><i class="far fa-calendar-alt"></i>2020</p>
+									</div>
+									<p>
+										¡Hola! Soy MexiBot basado en la búsqueda de música, moderacion, dicercion y mas!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<!-- Skills Row Start -->
+					<div class="row mt-100">
+					
+						<!-- Header Block -->
+						<div class="col-md-12">
+							<div class="header-box mb-50">
+								<h3>Conocimientos</h3>
+							</div>
+						</div>
+					</div>
+					
+					<div class="box skills">
+						<div class="row">
+							<div class="col-lg-6 col-sm-6">
+
+								<!-- Skill Item -->
+								<div class="skill-item">
+									<h4 class="progress-title">HTML5</h4>
+									<div class="progress">
+										<div class="progress-bar" style="width:98%">
+											<div class="progress-value">98%</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Skill Item -->
+								<div class="skill-item">
+									<h4 class="progress-title">CSS3</h4>
+									<div class="progress">
+										<div class="progress-bar" style="width:85%">
+											<div class="progress-value">85%</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Skill Item -->
+								<div class="skill-item">
+									<h4 class="progress-title">JavaScript</h4>
+									<div class="progress">
+										<div class="progress-bar" style="width:90%">
+											<div class="progress-value">90%</div>
+										</div>
+									</div>
+								</div>
+							
+								<!-- Skill Item -->
+								<div class="skill-item">
+									<h4 class="progress-title">Python</h4>
+									<div class="progress">
+										<div class="progress-bar" style="width:77%">
+											<div class="progress-value">77%</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-sm-6">
+								<div class="row">
+									
+									<!-- Skill Item -->
+									<div class="col-lg-6 col-sm-6">
+										<div class="chart" data-percent="80" data-bar-color="#252a3e"> 80% <p>PHP</p></div>
+									</div>
+									
+									<!-- Skill Item -->
+									<div class="col-lg-6 col-sm-6">
+										<div class="chart" data-percent="70" data-bar-color="#252a3e"> 70% <p>C++</p></div>
+									</div>
+									
+									<!-- Skill Item -->
+									<div class="col-lg-6 col-sm-6">
+										<div class="chart" data-percent="80" data-bar-color="#252a3e"> 80% <p>Photoshop</p></div>
+									</div>
+									
+									<!-- Skill Item -->
+									<div class="col-lg-6 col-sm-6">
+										<div class="chart" data-percent="90" data-bar-color="#252a3e"> 90% <p>Vue</p></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			  	</section>
+         	</div>
+			 
+			<!-- Portfolio Section -->
+          	<div class="page pt-portfolio" data-simplebar>
+            	<section class="container">
+					
+					<!-- Section Title -->
+					<div class="header-page mt-70 mob-mt">
+						<h2>Portafolio</h2>
+    					<span></span>
+					</div>
+					
+					<!-- Portfolio Filter Row Start -->
+					<div class="row mt-100">
+						<div class="col-lg-12 col-sm-12 portfolio-filter">
+							<ul>
+								<li class="active" data-filter="*">All</li>
+								<li data-filter=".html">HTML</li>
+								<li data-filter=".npm">NPM's</li>
+								<li data-filter=".bot">Bots</li>
+							</ul>
+						</div>
+					</div>
+					
+					<!-- Portfolio Item Row Start -->
+					<div class="row portfolio-items mt-100 mb-100">
+					
+						<!-- Portfolio Item -->
+						<div class="item col-lg-4 col-sm-6 bot">
+							<figure>
+								<img alt="" src="https://images-ext-1.discordapp.net/external/knNiqJNecMIWFsYB7bOe3pFunTebZFKeswV3jJx7XkA/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/738138873091325993/86c28485b0669ccd33a25fbe03478bca.png?width=572&height=572">
+								<figcaption>
+									<h3>MexiBot</h3>
+									<p>Discord Bot</p><i class="fas fa-image"></i>
+									<a class="link" href="https://discord.com/oauth2/authorize?client_id=738138873091325993&permissions=8&scope=bot"></a>
+								</figcaption>
+							</figure>
+						</div>
+					
+						<!-- Portfolio Item -->
+						<div class="item col-lg-4 col-sm-6 bot">
+							<figure>
+								<img alt="" src="https://images-ext-2.discordapp.net/external/stl3W2jKLVh8_wJUek1D2tQaFRYS5GESDRbk-BV-wSk/%3Fsize%3D1024%7D/https/cdn.discordapp.com/avatars/774664912546693170/b5fe94c1efb0247f3dafa1530568f08d.png?width=115&height=115">
+								<figcaption>
+									<h3>ECO</h3>
+									<p>Discord Bot</p><i class="fas fa-image"></i>
+									<a class="link" href="https://discord.com/oauth2/authorize?client_id=774664912546693170&permissions=8&scope=bot"></a>
+								</figcaption>
+							</figure>
+						</div>
+					</div>
+				</section>
+       	   	</div>
+			
+			<!-- Contact Section -->
+         	<div class="page pt-contact" data-simplebar>
+            	<section class="container">
+					
+					<!-- Section Title -->
+              		<div class="header-page mt-70 mob-mt">
+						<h2>Contactame</h2>
+    					<span></span>
+					</div>
+					
+					<!-- Form Start -->
+					<div class="row mt-100">
+						<div class="col-lg-12 col-sm-12">
+							<div class="contact-form ">
+                        		<form method="post" class="box contact-valid" id="contact-form">
+									<div class="row">
+                            			<div class="col-lg-6 col-sm-12">
+                                			<input type="text" name="name" id="name" class="form-control" placeholder="Name *">
+                            			</div>
+                            			<div class="col-lg-6 col-sm-12">
+                                			<input type="email" name="email" id="email" class="form-control" placeholder="Email *">
+                            			</div>
+                            			<div class="col-lg-12 col-sm-12">
+                                			<textarea class="form-control" name="note"  id="note" placeholder="Your Message"></textarea>
+                            			</div>
+                             			<div class="col-lg-12 col-sm-12 text-center">
+                                			<button type="submit" class="btn-st">Enviar mensaje</button>
+                                			<div id="loader">
+                                    			<i class="fas fa-sync"></i>
+                                			</div>
+                            			</div>
+										<div class="col-lg-12 col-sm-12">
+                            				<div class="error-messages">
+                                				<div id="success">
+													<i class="far fa-check-circle"></i>Gracias! Tu mensaje ha sido enviado.
+												</div>
+                                				<div id="error">
+													<i class="far fa-times-circle"></i>Se produjo un error al enviar el correo electrónico. Por favor, inténtelo de nuevo más tarde.
+												</div>
+											</div>
+                            			</div>
+									</div>
+                    			</form>
+                    		</div>
+						</div>
+					</div>
+					
+					<!-- Contact Info -->
+					<div class="box contact-info">
+						<div class="row">
+							<div class="col-lg-4 col-sm-12 info">
+								<i class="fas fa-paper-plane"></i>
+         						<p>example@example.com</p>
+          						<span>Email</span>
+							</div>
+							<div class="col-lg-4 col-sm-12 info">
+								<i class="fas fa-map-marker-alt"></i>
+         						<p>123 Lorem Ipsum, USA</p>
+          						<span>Addres</span>
+							</div>	
+							<div class="col-lg-4 col-sm-12 info">
+								<i class="fas fa-phone"></i>
+         						<p>(+1) 123 456 7890</p>
+          						<span>Phone</span>
+							</div>	
+						</div>
+					</div>
+					
+					<!--Google Map Start-->
+					<div class="google-map box mt-100 mb-100">
+						<div class="row">
+							<div class="col-lg-12">
+								<div id="map" data-latitude="40.712775" data-longitude="-74.005973" data-zoom="14"></div>
+							</div>
+						</div>
+					</div>
+            	</section>
+          	</div> 
+			
+        </div>
+      	</div>
+    	</div>
+  		</div>
+		</div>
+		</div>
+		
+		<!-- All Script -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/simplebar.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/jquery.animatedheadline.min.js"></script>
+		<script src="js/jquery.easypiechart.js"></script>
+		<script src="js/jquery.validation.js"></script>
+		<script src="js/tilt.js"></script>
+        <script src="js/main.js"></script>
+		<script src="js/main-demo.js"></script>
+        <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+    </body>
+
+
+<!-- Mirrored from atzu.xyz/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Jan 2021 23:55:52 GMT -->
+</html>
